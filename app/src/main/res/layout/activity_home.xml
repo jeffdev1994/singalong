@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".HomeActivity"
+    android:background="@drawable/background2">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/Title"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/title"
+        android:scaleType="matrix" />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SavedList"
+        android:layout_above="@+id/Record"
+        android:layout_alignLeft="@+id/Title"
+        android:layout_alignStart="@+id/Title"
+        android:layout_below="@+id/Title" />
+
+
+    <ImageButton
+        android:layout_width="140dp"
+        android:layout_height="160dp"
+        android:id="@+id/Record"
+        android:background="@drawable/mic"
+        android:scaleType="matrix"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="toggleRecord" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/LaunchMusic"
+        android:layout_alignTop="@+id/Record"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/musicsmall"
+        android:adjustViewBounds="true"
+        android:focusable="false"
+        android:onClick="launchMusic" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/Help"
+        android:layout_below="@+id/LaunchMusic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/helpsmall"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
