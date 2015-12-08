@@ -1,4 +1,4 @@
-# singalong
+# Sing Along
 * Do you know for a fact that you cant sing?
 * Do you ever listen to music with headphones on, and feel like maybe you can sing?
 
